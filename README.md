@@ -6,7 +6,7 @@ The project uses the IPify Geolocation API to fetch IP details and Leaflet.js to
 
 ## 🚀 Live Demo
 
-🔗 Deployed App: https://tiny-malabi-22fefe.netlify.app/
+🔗 Deployed App: https://lisa12265.netlify.app/
 
 ## ✨ Features
 
