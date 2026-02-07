@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>IP TRACKER</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>MELISSA IP ADDRESS TRACKER</h1>
+      <form class="search-form">
+        <input
+          type="text"
+          placeholder="Search for IP address"
+          aria-label="Search IP address"
+        />
+        <button type="submit"><img src="icon-arrow.svg" alt="search" /></button>
+      </form>
+      <section class="info-card">
+        <div>
+          <p class="label">IP ADDRESS</p>
+          <p class="value" id="ip">—</p>
+        </div>
+        <div>
+          <p class="label">LOCATION</p>
+          <p class="value" id="location">—</p>
+        </div>
+        <div>
+          <p class="label">TIMEZONE</p>
+          <p class="value" id="timezone">—</p>
+        </div>
+        <div>
+          <p class="label">ISP</p>
+          <p class="value" id="isp">—</p>
+        </div>
+      </section>
+    </header>
+    <main id="map"></main>
+    <br /><br />
+    <div class="attribution">
+      <p>Challenge by Web3BridgeAfrica FrontendAdvaced, CohortXIV</p>
+      Coded by <a href="https://github.com/lisa12265">MELISSA</a>.
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="lisa.js"></script>
+  </body>
+</html>

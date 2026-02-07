@@ -1,0 +1,93 @@
+body {
+  background-color: var(--very-dark-gray);
+  color: var(--dark-gray);
+  font-family: "Rubik", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: url("./images/pattern-bg-mobile.png") no-repeat center/cover;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.header h1 {
+  color: purple;
+  margin-bottom: 1rem;
+}
+
+.search-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 1rem;
+  font-size: 18px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+.search-form button {
+  background: pink;
+  border: none;
+  padding: 1rem;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.info-card {
+  background: plum;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: grid;
+  gap: 2rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.label {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: var(--dark-gray);
+}
+
+.value {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--very-dark-gray);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+#map {
+  height: calc(100vh - 300px);
+}
+
+/* MOBILE */
+.header {
+  background-image: url("./images/pattern-bg-mobile.png");
+}
+/* DESKTOP */
+@media (min-width: 768px) {
+  .header {
+    background-image: url("pattern-bg-desktop.png");
+  }
+
+  .info-card {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+  }
+}
