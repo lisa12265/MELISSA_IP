@@ -83,7 +83,7 @@ body {
 /* DESKTOP */
 @media (min-width: 768px) {
   .header {
-    background-image: url("pattern-bg-desktop.png");
+    background-image: url("images/pattern-bg-desktop.png");
   }
 
   .info-card {
